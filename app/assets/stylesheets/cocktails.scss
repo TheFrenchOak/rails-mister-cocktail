@@ -1,0 +1,17 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.bg-blur {
+  background: url(https://stephmorin.ca/wp-content/uploads/2019/01/Steph-Morin-Bar-Background-Paralax.jpg);
+  position: fixed;
+  height: 100%; 
+  width: 100%; 
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
