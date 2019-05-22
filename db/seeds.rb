@@ -36,6 +36,10 @@ require 'open-uri'
       # image_url: COCKTAIL_IMAGES[rand(0..COCKTAIL_IMAGES.length)]
     )
 
+    unless saved_ingredient.persisted?
+      saved_ingredient = Ingredient.find_by(name: ingredient)
+    end
+
     next unless dose.present?
 
     Dose.create(
