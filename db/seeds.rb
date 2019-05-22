@@ -13,6 +13,7 @@ require 'open-uri'
 #   Ingredient.create(name: element["strIngredient1"])
 # end
 50.times do
+  sleep 0.5
   url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
   resp = open(url).read
   data = JSON.parse(resp)
@@ -22,7 +23,7 @@ require 'open-uri'
 
   saved_cocktail = Cocktail.create(
     name: cocktail,
-    image_url: image
+    remote_image_url_url: image
   )
 
   (1..15).each do |index|

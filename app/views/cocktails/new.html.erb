@@ -2,7 +2,8 @@
   <h1>New Cocktail</h1>
   <%= simple_form_for [@cocktail] do |f| %>
     <%= f.input :name %>
-    <%= f.input :image_url %>
+    <%= f.input :image_url, as: :file %>
+    <%= f.input :image_url_cache, as: :hidden %>
     <%= f.submit "add a cocktail", class: "btn btn-primary" %>
   <% end %>
 </div>
