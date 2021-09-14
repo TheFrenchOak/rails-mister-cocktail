@@ -7,7 +7,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "serialize-javascript": "^2.1.1",
-    "set-value": "^2.0.1"
+    "set-value": "^4.0.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.4.1"
